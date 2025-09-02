@@ -264,7 +264,7 @@
                                                 <option value="LG">LG</option>
                                                 <option value="GENIUS">GENIUS</option>
                                                 <option value="SAMSUNG">SAMSUNG</option>
-                                                <option value="CISCO">CISCO</option>
+                                                <option value="CISCO IP">CISCO IP</option>
                                                 <option value="QUASAD">QUASAD</option>
                                                 <option value="DYNABOOK">DYNABOOK</option>
                                             </select>
@@ -289,8 +289,9 @@
                                             <option value="TECLADO">TECLADO</option>
                                             <option value="LAPTOP">LAPTOP</option>
                                             <option value="CPU/MONITOR">CPU/MONITOR</option>
-                                            <option value="IMPRESORA">IMPRESORA</option>
                                             <option value="TELEFONO FIJO">TELEFONO FIJO</option>
+                                            <option value="TELEVISOR">TELEVISOR</option>
+                                            <option value="IMPRESORA">IMPRESORA</option>
                                             <option value="TABLET">TABLET</option>
                                             <option value="UPS">UPS</option>
                                         </select>
@@ -321,6 +322,7 @@
                                             <select class="form-select" id="hardDriveTech">
                                                 <option value="HDD">HDD</option>
                                                 <option value="SSD">SSD</option>
+                                                <option value="HDD/SSD">HDD/SSD</option>
                                             </select>
                                             <input type="number" class="form-control" id="hardDriveSize" placeholder="Capacidad" min="0">
                                             <select class="form-select" id="hardDriveType">
@@ -737,7 +739,7 @@
             
             // Manejar campos combinados
             if (record.brand) {
-                const brandOptions = ["LENOVO", "HP", "DELL", "ASUS", "LG", "GENIUS", "SAMSUNG", "CISCO", "QUASAD", "DYNABOOK"];
+                const brandOptions = ["LENOVO", "HP", "DELL", "ASUS", "LG", "GENIUS", "SAMSUNG", "CISCO IP", "QUASAD", "DYNABOOK"];
                 if (brandOptions.includes(record.brand.toUpperCase())) {
                     document.getElementById('brandSelect').value = record.brand.toUpperCase();
                     document.getElementById('brandInput').value = '';
@@ -971,4 +973,5 @@
         });
     </script>
 </body>
+
 </html>
